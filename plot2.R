@@ -1,5 +1,6 @@
 ## read in data
-data <- read.table("household_power_consumption.txt", header = TRUE, sep = ";")
+data <- read.table("household_power_consumption.txt", header = TRUE, sep = ";",
+                   na.strings = "?")
 
 ## subset data from 01/02/2007 to 02/02/2007 (DD/MM/YYYY)
 data2 <- subset(data, Date == "1/2/2007"|Date == "2/2/2007")
