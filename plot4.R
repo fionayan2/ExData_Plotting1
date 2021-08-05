@@ -12,7 +12,7 @@ data2$datetime <- strptime(paste(data2$Date,data2$Time), "%d/%m/%Y %H:%M:%S")
 data2$Global_active_power <- as.numeric(data2$Global_active_power)
 
 ## plot4
-png(file="plot4.png")
+png(file="plot4.png", width = 480, height = 480)
 par(mfrow = c(2,2))
 
 plot(data2$datetime, 
